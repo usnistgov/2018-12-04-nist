@@ -13,7 +13,7 @@ enddate: 2018-12-05        # machine-readable end date for the workshop in YYYY-
 instructor: ["TBA"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["TBA"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["chandler.becker@nist.gov"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:  https://pad.carpentries.org/2018-12-04-nist           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -179,12 +179,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <hr/>
 
-{% comment %} 
- SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -426,7 +426,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
         Because this installer is not signed by the developer, you may have to
         right click (control click) on the .pkg file, click Open, and click
-        Open on the pop up window. 
+        Open on the pop up window.
         After installing Git, there will not be anything in your <code>/Applications</code> folder,
         as Git is a command line program.
         <strong>For older versions of OS X (10.5-10.8)</strong> use the
@@ -455,8 +455,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     color-coding of key words. The default text editor on macOS and
     Linux is usually set to Vim, which is not famous for being
     intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
     return to the shell.
   </p>
 
@@ -600,6 +600,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+{% comment %}
   <h3>R</h3>
 
   <p>
@@ -619,9 +620,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         from <a href="https://cran.r-project.org/index.html">CRAN</a>.
         Also, please install the
         <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
         for example when installing R packages.
       </p>
     </div>
@@ -648,9 +649,11 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       </p>
     </div>
   </div>
+{% endcomment %}
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
+{% comment %}
   <h3>SQLite</h3>
 
   <p>
@@ -694,10 +697,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <p><strong>If you installed Anaconda, it also has a copy of SQLite
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
+    {% endcomment %}
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
 
+
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
-  <h3>OpenRefine</h3>
+{% comment %}
+<h3>OpenRefine</h3>
   <p>
     For this lesson you will need <em>OpenRefine</em> and a
     web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
@@ -741,6 +747,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
     </div>
   </div>
+{% endcomment %}
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 
 {% comment %}
